@@ -1,0 +1,98 @@
+# Node.js Hash Generator
+
+This Node.js script generates hashes for a given input string using all available hashing algorithms supported by the `crypto` module.
+
+## Features
+
+- Automatically detects and uses all hash algorithms available in the current Node.js environment.
+- Takes a string input and generates a hash for each algorithm.
+- Outputs the result in hexadecimal format.
+
+## Prerequisites
+
+- **Node.js** installed on your system (version 10 or higher recommended).
+- Basic knowledge of Node.js and command line usage.
+
+## Getting Started
+
+1. Clone the repository or download the script to your local machine.
+
+2. Open a terminal in the directory where the script is located.
+
+3. Ensure that Node.js is installed
+
+4. To run the script, pass a string as a command-line argument to generate hashes for it using all supported algorithms.
+
+## Example 
+
+```bash
+node hashall.js "password"
+```
+
+Example output:
+```
+RSA-MD5: 5f4dcc3b5aa765d61d8327deb882cf99
+RSA-RIPEMD160: 2c08e8f5884750a7b99f6f2f342fc638db25ff31
+RSA-SHA1: 5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8
+RSA-SHA1-2: 5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8
+RSA-SHA224: d63dc919e201d7bc4c825630d2cf25fdc93d4b2f0d46706d29038d01
+RSA-SHA256: 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+RSA-SHA3-224: c3f847612c3780385a859a1993dfd9fe7c4e6d7f477148e527e9374c
+RSA-SHA3-256: c0067d4af4e87f00dbac63b6156828237059172d1bbeac67427345d6a9fda484
+RSA-SHA3-384: 9c1565e99afa2ce7800e96a73c125363c06697c5674d59f227b3368fd00b85ead506eefa90702673d873cb2c9357eafc
+RSA-SHA3-512: e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716
+RSA-SHA384: a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7
+RSA-SHA512: b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86
+RSA-SHA512/224: f2356967afbae0c00f7a58d28a126fe034d555397d0d0772d1427c98
+RSA-SHA512/256: f3f22d82ccf54a92cfc584d9f1531cbf29b11b513f7f68a20a2fa707f3450220
+RSA-SM3: 08594e140bcc046e345325435218f67a85c38c63de6443b197b544d70ee62f26
+blake2b512: 7c863950ac93c93692995e4732ce1e1466ad74a775352ffbaaf2a4a4ce9b549d0b414a1f3150452be6c7c72c694a7cb46f76452917298d33e67611f0a42addb8
+blake2s256: 4c81099df884bd6e14a639d648bccd808512e48af211ae4f44d545ea6d5e5f2b
+id-rsassa-pkcs1-v1_5-with-sha3-224: c3f847612c3780385a859a1993dfd9fe7c4e6d7f477148e527e9374c
+id-rsassa-pkcs1-v1_5-with-sha3-256: c0067d4af4e87f00dbac63b6156828237059172d1bbeac67427345d6a9fda484
+id-rsassa-pkcs1-v1_5-with-sha3-384: 9c1565e99afa2ce7800e96a73c125363c06697c5674d59f227b3368fd00b85ead506eefa90702673d873cb2c9357eafc
+id-rsassa-pkcs1-v1_5-with-sha3-512: e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716
+md5: 5f4dcc3b5aa765d61d8327deb882cf99
+md5-sha1: 5f4dcc3b5aa765d61d8327deb882cf995baa61e4c9b93f3f0682250b6cf8331b7ee68fd8
+md5WithRSAEncryption: 5f4dcc3b5aa765d61d8327deb882cf99
+ripemd: 2c08e8f5884750a7b99f6f2f342fc638db25ff31
+ripemd160: 2c08e8f5884750a7b99f6f2f342fc638db25ff31
+ripemd160WithRSA: 2c08e8f5884750a7b99f6f2f342fc638db25ff31
+rmd160: 2c08e8f5884750a7b99f6f2f342fc638db25ff31
+sha1: 5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8
+sha1WithRSAEncryption: 5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8
+sha224: d63dc919e201d7bc4c825630d2cf25fdc93d4b2f0d46706d29038d01
+sha224WithRSAEncryption: d63dc919e201d7bc4c825630d2cf25fdc93d4b2f0d46706d29038d01
+sha256: 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+sha256WithRSAEncryption: 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
+sha3-224: c3f847612c3780385a859a1993dfd9fe7c4e6d7f477148e527e9374c
+sha3-256: c0067d4af4e87f00dbac63b6156828237059172d1bbeac67427345d6a9fda484
+sha3-384: 9c1565e99afa2ce7800e96a73c125363c06697c5674d59f227b3368fd00b85ead506eefa90702673d873cb2c9357eafc
+sha3-512: e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716
+sha384: a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7
+sha384WithRSAEncryption: a8b64babd0aca91a59bdbb7761b421d4f2bb38280d3a75ba0f21f2bebc45583d446c598660c94ce680c47d19c30783a7
+sha512: b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86
+sha512-224: f2356967afbae0c00f7a58d28a126fe034d555397d0d0772d1427c98
+sha512-224WithRSAEncryption: f2356967afbae0c00f7a58d28a126fe034d555397d0d0772d1427c98
+sha512-256: f3f22d82ccf54a92cfc584d9f1531cbf29b11b513f7f68a20a2fa707f3450220
+sha512-256WithRSAEncryption: f3f22d82ccf54a92cfc584d9f1531cbf29b11b513f7f68a20a2fa707f3450220
+sha512WithRSAEncryption: b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86
+shake128: 0ac28ef634f3a8415ae5ef6e614bf11f
+shake256: a5ee08f8e3abe7d592f6de77f1d3298a1149eba68b97f091c90b7736a1be63ab
+sm3: 08594e140bcc046e345325435218f67a85c38c63de6443b197b544d70ee62f26
+sm3WithRSAEncryption: 08594e140bcc046e345325435218f67a85c38c63de6443b197b544d70ee62f26
+ssl3-md5: 5f4dcc3b5aa765d61d8327deb882cf99
+ssl3-sha1: 5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8
+```
+
+## Script Explanation
+The script accepts a string input and generates a hash using every available algorithm in Node.js. The following steps summarize the code:
+
+- It retrieves all available hash algorithms using crypto.getHashes().
+- It iterates through the list of algorithms and generates a hash for each one using the input string.
+- Each hash is output in hexadecimal format.
+
+## Usage
+
+```node hashall.js "YOUR STRING HERE"```
+
